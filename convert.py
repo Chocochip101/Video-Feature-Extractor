@@ -27,11 +27,9 @@ if len(file_list) == 0:
     "No Numpy File Found!"
 else:
     for file_name in file_list:
-        try:
-            weights = np.load(NP_PATH + os.sep + file_name)
-            with h5py.File(OUTPUT_FILENAME + '.h5', 'w') as hf:
-                hf.create_dataset(file_name[:len(file_name) - 3], data=weights)
-        except:
-            print("Error: loading numpy file ~", file_name)
-            continue
+
+      weights = np.load('.'+NP_PATH + os.sep + file_name)
+      with h5py.File('.'+OUTPUT_PATH+os.sep+OUTPUT_FILENAME + '.h5', 'w') as hf:
+        hf.create_dataset(file_name[:len(file_name) - 3], data=weights)
+
         

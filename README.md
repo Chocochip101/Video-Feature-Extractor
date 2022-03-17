@@ -29,7 +29,7 @@ You can see the example file at input.csv.
 ### Numpy Extraction
 
 Just simply run:
-~~~
+~~~ 
 !python extract.py --csv=input.csv --type=2d --batch_size=64 --num_decoding_thread=4
 ~~~
 Then at the result directory you can see the .npy file extracted from the video by ResNet.
@@ -39,6 +39,23 @@ If you want the feature extraction file as a format of h5, run convert.py.
 !python convert.py --numpy_dir=/NumpyResult --output_dir=/h5Result --ouput_filename=SampleVideo
 ~~~
 As running the above code, you can see the converted SampleVideo.h5 file at h5Result directory.
+
+### Check data
+You can briefly check the h5 data file by this code.
+~~~ python
+import h5py
+# h5 file dir
+a = h5py.File("./h5Result/SampleVideo.h5", "r")
+with a:
+  # Check the keys
+  print(a.keys())
+  a_group_key = list(a.keys())[0]
+
+  # Get the data
+  data = list(a[a_group_key])
+  print(data)
+~~~
+
 ## Directory
 
 ~~~
