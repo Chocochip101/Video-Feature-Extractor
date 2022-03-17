@@ -1,6 +1,10 @@
 # Feature Object Extraction(2D/3D) to h5 Format
 This repo aims at providing to use and efficient code for extracting video object features using deep CNN (ResNet 2D or 3D) and converting to h5 Format.  
-![Architecture](/Architecture.png)
+![Architecture](/Architecture.png)  
+1. Split video to image by 1 FPS
+2. Extract object feature by CNN and save to separate Numpy file
+3. Merge files to .h5 format
+
 ## Requirments
 - Pytorch >= 1.0
 - Python >= 3
@@ -24,7 +28,7 @@ absolute_path_video2.webm,absolute_path_of_video2_features.npy
 You can see the example file at input.csv. 
 ### Numpy Extraction
 
-And then just simply run:
+Just simply run:
 ~~~
 !python extract.py --csv=input.csv --type=2d --batch_size=64 --num_decoding_thread=4
 ~~~
