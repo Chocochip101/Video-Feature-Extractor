@@ -1,5 +1,5 @@
 # Feature Object Extraction(2D/3D) to h5 Format
-This repo aims at providing an easy to use and efficient code for extracting video features using deep CNN (ResNet 2D or 3D) and converting to h5 Format.  
+This repo aims at providing to use and efficient code for extracting video object features using deep CNN (ResNet 2D or 3D) and converting to h5 Format.  
 ![Architecture](/Architecture.png)
 ## Requirments
 - Pytorch >= 1.0
