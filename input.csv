@@ -1,2 +1,2 @@
 video_path,feature_path,,,,,
-/content/drive/MyDrive/ExtractFeature/video_feature_extractor/SampleVideo/SampleVideo.mp4,/content/drive/MyDrive/ExtractFeature/video_feature_extractor/result/SampleVideoFeature.npy,,,,,
+/content/drive/MyDrive/ExtractFeature/video_feature_extractor/SampleVideo/SampleVideo.mp4,/content/drive/MyDrive/ExtractFeature/video_feature_extractor/NumpyResult/SampleVideoFeature.npy,,,,,

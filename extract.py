@@ -9,7 +9,7 @@ from preprocessing import Preprocessing
 from random_sequence_shuffler import RandomSequenceSampler
 import torch.nn.functional as F
 
-parser = argparse.ArgumentParser(description='Easy video feature extractor')
+parser = argparse.ArgumentParser(description='Video feature extractor')
 
 parser.add_argument(
     '--csv',
