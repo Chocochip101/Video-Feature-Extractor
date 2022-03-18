@@ -1,8 +1,8 @@
-# Feature Object Extraction(2D/3D) to h5 Format
+# ㅇ
 This repo aims at providing to use and efficient code for extracting video object features using deep CNN (ResNet 2D or 3D) and converting to h5 Format.  
 ![Architecture](/Architecture.png)  
 1. Split video to image by 1 FPS
-2. Extract object feature by CNN and save to separate Numpy file
+2. Extract object feature by CNN and save to separate .npy file
 3. Merge files to .h5 format
 
 ## Requirments
