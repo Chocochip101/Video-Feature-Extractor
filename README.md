@@ -16,7 +16,7 @@ This repo aims at providing to use and efficient code for extracting video objec
 !pip install -r requirements.txt
 ~~~
 
-## How To Use ?
+## How To Use
 ### Dataset
 First of all you need to generate a csv containing the list of videos you want to process. For instance, if you have video1.mp4 and video2.webm to process, you will need to generate a csv of this form:  
 ~~~
