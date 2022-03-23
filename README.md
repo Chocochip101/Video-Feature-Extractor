@@ -44,16 +44,13 @@ As running the above code, you can see the converted SampleVideo.h5 file at h5Re
 You can briefly check the h5 data file by this code.
 ~~~ python
 import h5py
-# h5 file dir
-a = h5py.File("./h5Result/SampleVideo.h5", "r")
+a = h5py.File('./h5Result/SampleVideo.h5', "r+")
+
 with a:
   # Check the keys
   print(a.keys())
-  a_group_key = list(a.keys())[0]
-
-  # Get the data
-  data = list(a[a_group_key])
-  print(data)
+  for next in a.keys():
+    print(next, a[next].shape)
 ~~~
 
 ## Directory

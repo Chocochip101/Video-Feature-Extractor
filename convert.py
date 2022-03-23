@@ -22,14 +22,13 @@ NP_PATH = args.numpy_dir
 OUTPUT_PATH = args.output_dir
 OUTPUT_FILENAME = args.ouput_filename
 file_list = os.listdir('./' + NP_PATH)
-
+print(file_list)
 if len(file_list) == 0:
     "No Numpy File Found!"
 else:
+    hf = h5py.File('.'+OUTPUT_PATH+os.sep+OUTPUT_FILENAME + '.h5', 'w')
     for file_name in file_list:
-
       weights = np.load('.'+NP_PATH + os.sep + file_name)
-      with h5py.File('.'+OUTPUT_PATH+os.sep+OUTPUT_FILENAME + '.h5', 'w') as hf:
-        hf.create_dataset(file_name[:len(file_name) - 3], data=weights)
+      hf.create_dataset(file_name[:len(file_name) - 4], data=weights)
 
         
